@@ -107,3 +107,10 @@ The API uses **JWT (JSON Web Tokens)** for user authentication. Users must authe
     "email": "user@example.com",
     "password": "password123"
   }
+
+# API Documentation
+
+## 1. Create User
+This endpoint creates a new user.
+
+![Create User Request](./assets/create_user.png)
