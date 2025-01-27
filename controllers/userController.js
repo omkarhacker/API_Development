@@ -108,16 +108,22 @@ exports.updateUser = [
   ];
   
   
-// Delete User
-exports.deleteUser = async (req, res) => {
-  const { id } = req.params;
-
-  try {
-    const user = await prisma.user.delete({
-      where: { id:id },
-    });
-    res.json({ message: 'User deleted successfully', user });
-  } catch (error) {
-    res.status(400).json({ error: 'User not found' });
-  }
-};
+  exports.deleteUser = async (req, res) => {
+    const { id } = req.params;
+  
+    try {
+      // Try deleting the user
+      const user = await prisma.user.delete({
+        where: { id: id },
+      });
+      res.json({ message: 'User deleted successfully', user });
+    } catch (error) {
+      // Check for specific Prisma error when the user is not found
+      if (error.code === 'P2025') {
+        return res.status(404).json({ error: 'User not found' });
+      }
+      // Handle other errors
+      res.status(400).json({ error: 'Error deleting user or used as foregin key so cant delete', details: error.message });
+    }
+  };
+  
