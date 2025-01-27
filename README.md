@@ -122,5 +122,63 @@ This endpoint List All User.
 ![Create User Request](./assets/get_all_user.png)
 
 
+## 3. Update a User
+This endpoint Updates a User.
+
+![Create User Request](./assets/update_user.png)
+
+
+## 4. Delete a User
+This endpoint Deletes a User.
+
+![Create User Request](./assets/delete_user_using_userid.png)
+
+## 5. Create a Project
+This endpoint Creates a Project
+
+![Create User Request](./assets/create_project.png)
+
+
+## 6. List All Projects
+This endpoint List All Projects
+
+![Create User Request](./assets/get_all_project.png)
+
+## 7. Update a Project
+This endpoint Updates a Project
+
+![Create User Request](./assets/update_project_using_project_id.png)
+
+## 8. Delete a Project
+This endpoint Delete a Project
+
+![Create User Request](./assets/delete_project_using_project_id.png)
+
+## 9. Create Task Under Project
+This endpoint Creates Task Under Project
+
+![Create User Request](./assets/create_task_using_project_id.png)
+
+## 10. List All Task for Project
+This endpoint List All Task for Project
+
+![Create User Request](./assets/get_all_tasks_using_project_id.png)
+
+## 11. Updates the Task
+This endpoint Updates the Task
+
+![Create User Request](./assets/update_task_using_task_id.png)
+
+## 12. Deletes the Task
+This endpoint Deletes the Task
+
+![Create User Request](./assets/delete_task_using_task_id.png)
+
+## 13. Filter task by status and assigned User
+This endpoint Filter the task by status and assigned user
+
+![Create User Request](./assets/get_task_using_filters.png)
+
+
 
 
