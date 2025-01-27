@@ -114,3 +114,13 @@ The API uses **JWT (JSON Web Tokens)** for user authentication. Users must authe
 This endpoint creates a new user.
 
 ![Create User Request](./assets/create_user.png)
+
+
+## 2. List All User
+This endpoint List All User.
+
+![Create User Request](./assets/get_all_user.png)
+
+
+
+
